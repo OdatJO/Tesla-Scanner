@@ -24,12 +24,20 @@ function Section(props: SectionInterface) {
       }
    }, [myRef.current]);
 
+   const handleWhatsAppClick = () => {
+      const productTitle = props.title; 
+      const phoneNumber = '971501679410'; 
+      
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text= I want to know more about ${encodeURIComponent(productTitle)}`;
+      window.open(whatsappUrl, '_blank');
+    };
+
    return (
       <Wrap ref={myRef} bgImage={props.backgroundImg}>
          <Fade direction="up">
             <ItemSet>
                <h1 className="text-4xl font-bold text-black">{props.title}</h1>
-               <p>Order Online For Touchless Delivery</p>
+               <p>Get the best Tesla scanners</p>
             </ItemSet>
          </Fade>
          <Buttons>
@@ -37,14 +45,14 @@ function Section(props: SectionInterface) {
                <ButtonGroup>
                   <Link to={`/cars/${props.id}`}>
                      <LeftButton className=" hover:animate-bounce ">
-                        Custom Order
+                        View Details
                      </LeftButton>
                   </Link>
-                  <Link to="/cart">
+                  {/* link to whatsapp when clicking the button https://wa.me/971501679410 */}
+                  <button onClick={handleWhatsAppClick}>
                      <RightButton className="hover:animate-bounce ">
-                        Existing Inventory
-                     </RightButton>
-                  </Link>
+                     Enquire Now                     </RightButton>
+                  </button>
                </ButtonGroup>
             </Fade>
             {props.id !== cars.length && (

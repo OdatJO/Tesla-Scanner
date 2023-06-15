@@ -23,10 +23,16 @@ function Header(props: HeaderInterface) {
    const dispatch = useDispatch();
    const cartData = useCartState();
 
+   const handleWhatsAppClick = () => {  
+      const mevChargerLink = `https://www.mevcharger.com/products/type2`;
+      window.open(mevChargerLink, '_blank');
+    };
+
+
    return (
       <Container className={bgColor ? bgColor : ""}>
          <Link to="/">
-            <img src="/images/logo.svg"></img>
+            <img src="/images/logo4.png"></img>
          </Link>
          <Menu className="flex gap-2">
             {cars.map((car) => (
@@ -63,10 +69,10 @@ function Header(props: HeaderInterface) {
                <h1
                   className="text-black bg-transparent rounded-lg px-2.5 py-1.5 hover:text-white hover:bg-gray-800 cursor-pointer hover:bg-opacity-30 transition-colors mr-2"
                   onClick={() => {
-                     navigation(`/login`);
+                     handleWhatsAppClick();
                   }}
                >
-                  Sign In
+                  Tesla Chargers
                </h1>
             )}
 

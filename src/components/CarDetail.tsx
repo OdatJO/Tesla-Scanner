@@ -43,7 +43,7 @@ export default function CarDetail() {
                   <div className="flex flex-col-reverse">
                      <div className="mt-4">
                         <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                           {product.title}
+                           Tesla Scanner {product.title}
                         </h1>
 
                         <h2 id="information-heading" className="sr-only">
@@ -74,8 +74,9 @@ export default function CarDetail() {
                   <p className="text-gray-500 mt-6">{product.description}</p>
 
                   <p className="mt-4 font-bold text-lg">
-                     Price- $
-                     {new Intl.NumberFormat("en-GB").format(product.price)}
+                     Price:{' '} 
+                     {new Intl.NumberFormat("en-GB").format(product.price)} {' '}
+                     AED
                   </p>
                   <div className="flex gap-2 items-center mt-4">
                      {product.inStock ? (

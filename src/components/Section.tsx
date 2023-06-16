@@ -43,7 +43,7 @@ function Section(props: SectionInterface) {
          <Buttons>
             <Fade direction="up">
                <ButtonGroup>
-                  <Link to={`/cars/${props.id}`}>
+                  <Link to={`/teslascanner/${props.id}`}>
                      <LeftButton className=" hover:animate-bounce ">
                         View Details
                      </LeftButton>

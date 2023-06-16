@@ -8,7 +8,6 @@ import { Provider } from "react-redux";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { GoogleAuthProvider } from "firebase/auth";
-// TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
    apiKey: "AIzaSyCPnutUd4VgEUpRlFIStMGomY_EzE_v2Zk",
    authDomain: "tesla-ecommerce-5d52f.firebaseapp.com",

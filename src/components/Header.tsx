@@ -44,7 +44,7 @@ function Header(props: HeaderInterface) {
                              behavior: "smooth",
                              top: car.ref?.offsetTop,
                           })
-                        : navigation(`/cars/${car.id}`);
+                        : navigation(`/teslascanner/${car.id}`);
                   }}
                   key={car.id}
                >
@@ -112,7 +112,7 @@ function Header(props: HeaderInterface) {
                                    behavior: "smooth",
                                    top: car.ref?.offsetTop,
                                 })
-                              : navigation(`/cars/${car.id}`);
+                              : navigation(`/teslascanner/${car.id}`);
                         }}
                         key={car.id}
                      >

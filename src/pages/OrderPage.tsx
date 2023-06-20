@@ -57,7 +57,7 @@ export default function Example() {
                                     Total amount
                                  </dt>
                                  <dd className="mt-1 font-medium text-gray-900">
-                                    $
+                                 AED {' '}
                                     {new Intl.NumberFormat("en-GB").format(
                                        total
                                     )}
@@ -82,7 +82,7 @@ export default function Example() {
                                        <div className="font-medium text-gray-900 sm:flex sm:justify-between">
                                           <h5>{product.title}</h5>
                                           <p className="mt-2 sm:mt-0">
-                                             $
+                                             AED
                                              {new Intl.NumberFormat(
                                                 "en-GB"
                                              ).format(product.price)}

@@ -88,7 +88,7 @@ export default function CartPage() {
                                              </p>
                                           </div>
                                           <p className="mt-1 text-sm font-medium text-gray-900">
-                                             $
+                                             AED {' '}
                                              {new Intl.NumberFormat(
                                                 "en-GB"
                                              ).format(product.price)}
@@ -207,7 +207,7 @@ export default function CartPage() {
                      <div className="border-t border-gray-200 pt-4 flex items-center justify-between">
                         Shipping Estimate
                         <dd className="text-sm font-medium text-gray-900">
-                           $
+                           AED {' '}
                            {subtotal !== 0
                               ? new Intl.NumberFormat("en-GB").format(shipEsti)
                               : 0}
@@ -218,7 +218,7 @@ export default function CartPage() {
                            <span>Tax estimate</span>
                         </dt>
                         <dd className="text-sm font-medium text-gray-900">
-                           $
+                        AED {' '}
                            {subtotal !== 0
                               ? new Intl.NumberFormat("en-GB").format(tax)
                               : 0}
@@ -229,7 +229,7 @@ export default function CartPage() {
                            Order total
                         </dt>
                         <dd className="text-base font-medium text-gray-900">
-                           $
+                           AED {' '}
                            {subtotal !== 0
                               ? new Intl.NumberFormat("en-GB").format(total)
                               : 0}

@@ -29,8 +29,10 @@ export default function CarDetail() {
             <div className="lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
                {/* Product image */}
                <div className="lg:row-end-1 lg:col-span-4">
-               <title>Tesla Scanner {product.title}</title>
-
+                  <title>Tesla Scanner {product.title}</title>
+                  <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+                     Tesla Scanner {product.title}
+                  </h1>
                   <div className="aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden">
                      <img
                         src={`/images/${product.backgroundImg}`}
@@ -76,7 +78,7 @@ export default function CarDetail() {
                   <p className="text-gray-500 mt-6">{product.description}</p>
 
                   <p className="mt-4 font-bold text-lg">
-                     Price:{' '} 
+                     Price:{' '}
                      {new Intl.NumberFormat("en-GB").format(product.price)} {' '}
                      AED {' '}
                   </p>

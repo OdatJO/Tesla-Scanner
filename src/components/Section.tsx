@@ -48,7 +48,6 @@ function Section(props: SectionInterface) {
                         View Details
                      </LeftButton>
                   </Link>
-                  {/* link to whatsapp when clicking the button https://wa.me/971501679410 */}
                   <button onClick={handleWhatsAppClick}>
                      <RightButton className="hover:animate-bounce ">
                      Enquire Now                     </RightButton>
